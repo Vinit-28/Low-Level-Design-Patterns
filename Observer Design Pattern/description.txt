@@ -1,0 +1,12 @@
+------------------------------ Observer Design Pattern ------------------------------
+
+Problem Statement:
+We need to fire an event/notification/alert when an enetity's state changes. Example: Notify Me alert when a product comes 'in stock' or Notify users when Virat Kholi posts something.
+
+Hints:
+There will always be 2 things in the question:
+    1.) Observable
+    2.) Observer
+
+Solution:
+We will define two seperate entities 'Observable' & 'Observer'. Observable will be maintaining a list of Observers, so whenever an event occurs we will call notify/alert method of all the Observers of a particular Observable.
