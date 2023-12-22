@@ -1,0 +1,17 @@
+------------------------------ Observer Design Pattern ------------------------------
+
+Problem Statement:
+We need to make a base entity and then have to wrap that up into another entity and this process can continue up to N number of times. Example: Build a mechanism to cost of Pizza(Normal Pizza, Normal Pizza + Extra Cheeze, Normal Pizza + Extra Cheeze + Mushroom).
+
+Hints:
+Wrapping up of features or Adding layers overs layers.
+
+Solution:
+We will define a BaseEntity class(along with it's Interface) and for features we will define different feature classes and every feature class will be expecting a BaseEntity object(to calculate the cost) and the feature itself should be of type BaseEntity(as it is also going to be passed to another feature/wrapping).
+
+Why Decorator Pattern:
+It resolve the problem of "Class Explosion" -- If we do simple inheritance we will have to make lots of classes as per the combination of features with the base entity.
+
+Always Remeber:
+    1.) Features expects an BaseEntity object(Has a Relation -- composition).
+    2.) Features are also type of BaseEntity Object(Is a Relation -- inheritance).
