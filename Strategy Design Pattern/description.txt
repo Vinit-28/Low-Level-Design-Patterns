@@ -1,0 +1,9 @@
+------------------------------ Strategy Design Pattern ------------------------------
+
+Problem Statement:
+When Base class's functionalities are getting used in child classes, then it's good. The problem arises when the Base class's functionalities are getting overriden in the child classes and some/subsets of child classes defining the same code in that overriden functionality.
+
+We use inheritance in order to avoid/remove code duplicacy but in our case even after using inheritance we are defining the same code for the overriden functionality in the child classes.
+
+Solution:
+We will define the different strategies as per the functionalities that we were overriding in the child classes. Now instead of the child classes overriding the functionalities they will contain the strategy object.
